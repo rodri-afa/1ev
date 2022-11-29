@@ -17,9 +17,24 @@ $alumnos = ["Juan", "Marta", "Menganito", "Fabio", "Jaime"];
 //         "DWEC"=>5,
 //         "DWES"=>7
 //     ],
-//     "Marta"=>["DWEC"=>5,"DWES"=>7],
+//     "Marta"=>
+//     [
+//          "DWEC"=>5,
+//          "DWES"=>7
+//        ],
 //     "Menanito"=>["DWEC"=>5,"DWES"=>7],
 //]
+
+
+// foreach ($notas as $alumno => $notasAlumno) {
+//        foreach ($notasAlumno as $asignatura => $nota) {
+//         echo "la nota de la asignatura $asignatura es: $nota";
+//        }
+// }
+
+
+
+
 
 
 $notas = [];
@@ -33,4 +48,4 @@ foreach ($alumnos as  $al) {
 foreach ($notas as $alumno => $asignaturas) {
     $notas[$alumno]["DWEC"] = rand(1, 10);
 }
-print "<pre>" . print_r($notas, true) . "</pre>";
+// print "<pre>" . print_r($notas, true) . "</pre>";
